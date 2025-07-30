@@ -2,11 +2,11 @@
 
 ## Description
 
-The DECam Local Volume Exploration Survey (DELVE) combines archival DECam data with 126 nights of novel observations ([PropID 2019A-0305](https://legacy.noirlab.edu/noaoprop/abstract.mpl?2019A-0305)) to study dwarf satellite galaxies over a wide range of luminosities and environments. DELVE is divided into three survey components (WIDE, MC, and DEEP), each of which have their own observational strategy and data reduction pipeline. By combining novel observations with existing data from DES, DECaLS, and other community programs, DELVE will provide complete contiguous DECam coverage of the entire high-Galactic-latitude southern sky. By the end of the survey, DELVE is expected to cover >17,000 deg² to a depth of _griz_ &sim; 23.5 mag, &sim;2,200 deg² around the Magellanic Clouds to a depth of _gri_ &sim; 24.5 mag, and &sim;135 deg² around isolated Magellanic analogs in the Local Volume to a depth of _gi_ &sim; 25.5 mag.
+The DECam Local Volume Exploration Survey (DELVE; [PropID: 2019A-0305](https://legacy.noirlab.edu/noaoprop/abstract.mpl?2019A-0305)) combines archival DECam data with more than 150 nights of new observations to study satellite dwarf galaxies over a wide range of luminosities and environments. DELVE is divided into three survey components (WIDE, MC, and DEEP), each of which have their own observational strategy and data reduction pipeline. By combining novel observations with existing data from DES, DECaLS, and other community programs, DELVE provides complete contiguous DECam coverage of the entire high-Galactic-latitude southern sky. DELVE covers >17,000 deg² to a depth of _griz_ &sim; 23.5 mag, &sim;2,200 deg² around the Magellanic Clouds to a depth of _gri_ &sim; 24.5 mag, and &sim;135 deg² around isolated Magellanic analogs in the Local Volume to a depth of _gi_ &sim; 25.5 mag.
 
 For more complete information about DELVE, please visit: [https://delve-survey.github.io](https://delve-survey.github.io). For a full list of results from the DELVE Collaboration or using the DELVE data, visit [https://delve-survey.github.io/#papers](https://delve-survey.github.io/#papers).
 
-The **delve_dr2.objects** table and **delve_dr1.objects** table have been crossmatched against our default reference datasets within a 1.5 arcsec radius, nearest neighbor only. These tables will appear with **x1p5** in their name in our table browser. Example: [delve_dr2.x1p5__objects__gaia_dr3__gaia_source](/data-explorer?showTable=delve_dr2.x1p5__objects__gaia_dr3__gaia_source).
+To date, there have been three DELVE data releases (DR1, DR2, DR3). The **delve_dr2.objects** table and **delve_dr1.objects** table have been crossmatched against our default reference datasets within a 1.5 arcsec radius, nearest neighbor only. These tables will appear with **x1p5** in their name in our table browser. Example: [delve_dr2.x1p5__objects__gaia_dr3__gaia_source](/data-explorer?showTable=delve_dr2.x1p5__objects__gaia_dr3__gaia_source).
 
 | DELVE at a Glance |   |   |   |
 |---|---|---|---|
@@ -35,6 +35,30 @@ These three survey components will provide complementary insights into the abund
 
 ## Data Releases
 
+### Third Data Release (DELVE DR3)
+
+The third (and likely final) DELVE data release (DELVE DR3; Drlica-Wagner et al., in prep) is hosted at the Astro Data Lab and consists of coadded images and derived catalogs in _griz_ from the DELVE-WIDE processing. The DELVE DR3 coadds cover >XX,XXX deg² in all bands simultaneously. The DELVE DR3 catalog contains &sim;2.6 billion unique coadd objects.
+
+| DELVE DR3 Summary |   |
+|---|---|
+| Bands | _griz_ |
+| Number of Objects | 2,588,267,795 |
+| Area Covered (all bands) | XX,XXX deg² |
+| Depth (5σ PSF; _griz_) | XX.X, XX.X, XX.X, XX.X mag |
+| Depth (5σ AUTO; _griz_) | XX.X, XX.X, XX.X, XX.X mag |
+
+&nbsp;  
+
+[Back to Top](#)
+
+
+#### DECADE Cosmic Shear
+
+&nbsp;  
+
+[Back to Top](#)
+
+
 ### Second Data Release (DELVE DR2)
 
 The second DELVE data release (DELVE DR2; [Drlica-Wagner et al. 2022](http://arxiv.org/abs/2203.16565)) is hosted at the Astro Data Lab and consists of catalog-level coadds in _griz_ from the DELVE-WIDE processing. DELVE DR2 covers >20,000 deg² in each individual band and &sim;17,000 deg² in all bands simultaneously. The DELVE DR2 catalog contains &sim;2.5 billion unique objects, and &sim;618 million unique objects that were observed in all four bands.
@@ -55,7 +79,7 @@ The second DELVE data release (DELVE DR2; [Drlica-Wagner et al. 2022](http://arx
 
 [Back to Top](#)
 
-### DELVE DR2 MDN Photometric Redshifts
+#### DELVE DR2 MDN Photometric Redshifts
 
 We derive a sample of photometric redshift estimates for objects in the DELVE DR2 catalog using a Mixture Density Network (MDN) trained on _griz_ magnitudes and colors. This network outputs the weights, means, and standard deviations of 20 Gaussian distributions, which are then combined into a single probability density function (PDF) from which samples of the photo-z can be drawn. The resulting photo-z information can be accessed using the interfaces described in the Data Access section below, and the [delve_dr2.photoz](/data-explorer?showTable=delve_dr2.photoz) table can be browsed using the [Data Lab table browser](/data-explorer).
 
