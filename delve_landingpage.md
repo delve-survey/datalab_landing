@@ -79,79 +79,9 @@ The second DELVE data release (DELVE DR2; [Drlica-Wagner et al. 2022](http://arx
 
 [Back to Top](#)
 
-#### DELVE DR2 MDN Photometric Redshifts
+#### DELVE DR2 Photometric Redshifts
 
-We derive a sample of photometric redshift estimates for objects in the DELVE DR2 catalog using a Mixture Density Network (MDN) trained on _griz_ magnitudes and colors. This network outputs the weights, means, and standard deviations of 20 Gaussian distributions, which are then combined into a single probability density function (PDF) from which samples of the photo-z can be drawn. The resulting photo-z information can be accessed using the interfaces described in the Data Access section below, and the [delve_dr2.photoz](/data-explorer?showTable=delve_dr2.photoz) table can be browsed using the [Data Lab table browser](/data-explorer).
-
-**Training Data**  
-The MDN photo-z estimator was trained on a sample of objects with measured spectroscopic redshifts. This spec-z catalog was assembled by cross-matching sources from DELVE DR2 with several spectroscopic catalogs: [SDSS](https://www.sdss.org/),
-[2DF](http://www.2dfgrs.net/),
-[6DF](http://www.6dfgs.net/),
-[VIPERS](http://vipers.inaf.it/),
-[GAMA](http://www.gama-survey.org/pubs/ack.php),
-[2dFLens](https://www.atnf.csiro.au/pasa/18_2/mortlock2/paper/index.html),
-DES_AAOMEGA,
-DES_IMACS,
-[WIGGLEZ](https://wigglez.swin.edu.au/site/forward.html),
-[DEEP2](https://ui.adsabs.harvard.edu/abs/2013ApJS..208....5N/abstract),
-[3D-HST](https://ui.adsabs.harvard.edu/abs/2016ApJS..225...27M/abstract),
-[VVDS](https://cesam.lam.fr/vvds/),
-[CLASH-VLT](https://sites.google.com/site/vltclashpublic/home),
-[ACES](https://arxiv.org/abs/1112.0312),
-N17B331,
-[SAGA](https://sagasurvey.org/),
-[SPT_GMOS](https://arxiv.org/abs/1609.05211),
-[UDS](https://www.nottingham.ac.uk/astronomy/UDS/UDSz/),
-[C3R2](https://sites.google.com/view/c3r2-survey/home),
-[ATLAS](https://heasarc.gsfc.nasa.gov/W3Browse/all/atlasspecz.html),
-[VANDELS](http://vandels.inaf.it/),
-[SPARCS](http://www.faculty.ucr.edu/~gillianw/SpARCS/),
-[GLASS](https://glass.astro.ucla.edu/),
-CDB,
-ELG FIGS,
-[VUDS](https://cesam.lam.fr/vuds/),
-[ZFIRE](https://ui.adsabs.harvard.edu/abs/2016ApJ...828...21N/abstract),
-and
-[MOSFIRE](https://ui.adsabs.harvard.edu/abs/2015AJ....150..153W/abstract).
-
-
-We selected the matched objects that remained after a set of cuts.
-- SNR > 5 in the _g_ band and SNR > 3 in the _riz_ bands (when each band was available).
-- _g_ < 22.5
-- 0.01 < z-spec < 2
-- We removed objects with 178 < RA < 182 and Dec < 5 due to issues in a preliminary version of the DELVE catalog.
-
-A set of color cuts were applied to both the training and testing datasets.  
-- Objects with _g, r, i_ and _z_ measurements available were required to have: (_g_-_r_) < 4, -1 < (_r_-_i_) < 4, and -1 < (_i_-_z_) < 4
-- Objects with just _g_, _r_ and _i_ measurements available were required to have: (_g_-_r_) < 4 and -1 < (_r_-_i_) < 4
-
-The magnitude ranges of the data used to train the network were:  
-- 13.478 < _g_ < 22.500
-- 12.634 < _r_ < 23.297
-- 12.270 < _i_ < 22.751
-- 12.016 < _z_ < 22.859
-
-Approximately 1.4 million matched objects had measured spectroscopic redshifts. After cuts, we end up with ~1.1 million objects. Every object in this final set has _griz_ photometry measured by DELVE. Below we show the magnitude distributions of the objects used to train and evaluate the MDN model.
-
-![delve_dr2_mdn_photoz_mag.png](https://content.datalab.noirlab.edu/uploads/delve_dr2_mdn_photoz_mag_a72a1af6ec.png)
-
-Below we show the spec-z distribution (bin size = 0.01) of the training and testing samples. The training sample was selected to be as uniform as possible in redshift to avoid biases. In practice, this resulted in a flat distribution up to z = 0.6.
-
-![delve_dr2_mdn_photoz_dist.png](https://content.datalab.noirlab.edu/uploads/delve_dr2_mdn_photoz_dist_531aa9c67d.png)
-
-**Performance Metrics**  
-We used point estimates (taking the most probable value from the PDF) to build our metrics ("point-like metrics"). We define the following metrics:
-- The _photo-z bias_ is defined as Δz = zphot - zspec.
-- The _median bias_, median(Δz), is useful for identifying possible systematic effects in the redshift estimation
-- The _outlier fraction_ is defined as |Δz|/( 1 + zspec) > 0.15 within a given redshift bin.
-- The _normalized median absolute deviation_ measures the dispersion of the bias and is defined as σNMAD = 1.48 × median(| (Δz - median(Δz)) / (1 + zspec) |)
-- The _relative errors_ are defined as mean( Δz / (1 + z) ) within photo-z intervals of 0.05.
-
-These metrics were calculated using a spec-z interval of 0.05. Below we show the normalized median absolute deviation, median bias, outlier fraction, and relative error for the MDN photo-z sample evaluated on our test sample of objects.
-
-![delve_dr2_mdn_photoz_metrics.png](https://content.datalab.noirlab.edu/uploads/delve_dr2_mdn_photoz_metrics_866684a1de.png)
-
-_-- The DELVE Team_
+Photometric redshifts for DELVE DR2 are derived by integrating a Recurrent Neural Network architecture with a Mixture Density Network trained on _griz_ magnitudes and colors. This procedure is described in in [Teixera et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26C....4900886T). The resulting photo-z information can be accessed from the [delve_dr2.photoz](/data-explorer?showTable=delve_dr2.photoz) table.
 
 &nbsp;  
 
