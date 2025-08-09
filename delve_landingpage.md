@@ -66,12 +66,12 @@ The second DELVE data release (DELVE DR2; [Drlica-Wagner et al. 2022](http://arx
 | DELVE DR2 Summary |   |
 |---|---|
 | Bands | _griz_ |
+| Number of Objects | 2,500,247,752 |
 | Area Covered (all bands) | 16,972 deg² |
-| Area Covered (_griz_) | 24663, 22939, 21283, 22866 deg² |
+| Area Covered (_griz_) | 24,663; 22,939; 21,283; 22866 deg² |
 | Depth (5σ PSF; _griz_) | 24.3, 23.9, 23.5, 22.8 mag |
 | Depth (5σ AUTO; _griz_) | 23.9, 23.5, 23.0, 22.4 mag |
-| Seeing (_griz_) | 1.24, 1.10, 1.02, 1.00 |
-| Number of Objects | 2,500,247,752 |
+| PSF FWHM (_griz_) | 1.24, 1.10, 1.02, 1.00 arcsec |
 | Photometric Uniformity | 7.3 mmag |
 | Astrometric Accuracy | 22 mas |
 
@@ -94,12 +94,12 @@ The first DELVE data release (DELVE DR1; [Drlica-Wagner et al. 2021](https://arx
 | DELVE DR1 Summary |   |
 |---|---|
 | Bands | _griz_ |
+| Number of Objects | 519,737,142 |
 | Area Covered (all bands) | 4,075 deg² |
-| Area Covered (_griz_) | 5599, 5106, 5065, 5153 deg² |
+| Area Covered (_griz_) | 5,599; 5,106; 5,065; 5,153 deg² |
 | Depth (5σ PSF; _griz_) | 24.3, 23.9, 23.3, 22.8 mag |
 | Depth (5σ AUTO; _griz_) | 23.9, 23.4, 22.9, 22.4 mag |
-| Seeing (_griz_) | 1.28, 1.16, 1.07, 1.04 |
-| Number of Objects | 519,737,142 |
+| PSF FWHM (_griz_) | 1.28, 1.16, 1.07, 1.04 arcsec |
 | Photometric Uniformity | 9.1 mmag |
 | Astrometric Accuracy | 22 mas |
 
