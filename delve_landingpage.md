@@ -81,7 +81,7 @@ The second DELVE data release (DELVE DR2; [Drlica-Wagner et al. 2022](http://arx
 
 #### DELVE DR2 Photometric Redshifts
 
-Photometric redshifts for DELVE DR2 are derived by integrating a Recurrent Neural Network architecture with a Mixture Density Network trained on _griz_ magnitudes and colors. This procedure is described in in [Teixera et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26C....4900886T). The resulting photo-z information can be accessed from the [delve_dr2.photoz](/data-explorer?showTable=delve_dr2.photoz) table.
+Photometric redshifts for DELVE DR2 are derived by integrating a Recurrent Neural Network architecture with a Mixture Density Network trained on _griz_ magnitudes and colors as described in [Teixera et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26C....4900886T). The resulting photo-z information can be accessed from the [delve_dr2.photoz](/data-explorer?showTable=delve_dr2.photoz) table.
 
 &nbsp;  
 
