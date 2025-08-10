@@ -10,7 +10,7 @@ To date, there have been three DELVE data releases (DR1, DR2, DR3). The **delve_
 
 | DELVE at a Glance |   |   |   |
 |---|---|---|---|
-| **Survey** | **Area** | **Bands** | **Depth** |
+| **Survey** | **Area** | **Bands** | **Depth (10σ)** |
 | DELVE-WIDE | &sim;17,000 deg² | _griz_ | &sim;23.5 mag |
 | DELVE-MC | &sim;2,200 deg² | _gri_ | &sim;24.5 mag |
 | DELVE-DEEP | &sim;135 deg² | _gi_ | &sim;25.5 mag |
@@ -37,15 +37,15 @@ These three survey components will provide complementary insights into the abund
 
 ### Third Data Release (DELVE DR3)
 
-The third (and likely final) DELVE data release (DELVE DR3; Drlica-Wagner et al., in prep) is hosted at the Astro Data Lab and consists of coadded images and derived catalogs in _griz_ from the DELVE-WIDE processing. The DELVE DR3 coadds cover >XX,XXX deg² in all bands simultaneously. The DELVE DR3 catalog contains &sim;2.6 billion unique coadd objects.
+The third DELVE data release (DELVE DR3; Drlica-Wagner et al., in prep) consists of coadded images and catalogs in _griz_ from the DECam All Data Everywhere (DECADE) and DES DR2 processing at NCSA with the DES Data Management (DESDM) pipeline. The DELVE DR3 catalog contains &sim;2.6 billion unique coadd objects and covers >21,000 deg² in all four bands simultaneously. The DELVE DR3 coadd objects can be accessed through the [delve_dr3.coadd_objects](/data-explorer?showTable=delve_dr3.coadd_objects) table.
 
 | DELVE DR3 Summary |   |
 |---|---|
 | Bands | _griz_ |
 | Number of Objects | 2,588,267,795 |
-| Area Covered (all bands) | XX,XXX deg² |
-| Depth (5σ PSF; _griz_) | XX.X, XX.X, XX.X, XX.X mag |
-| Depth (5σ AUTO; _griz_) | XX.X, XX.X, XX.X, XX.X mag |
+| Area Covered (all bands) | 21,256 deg² |
+| Depth (5σ PSF; _griz_) | 24.9, 24.5, 24.0, 23.5 mag |
+| Depth (5σ AUTO; _griz_) | 24.3, 24.0, 23.5, 22.8 mag |
 
 &nbsp;  
 
@@ -61,14 +61,14 @@ The third (and likely final) DELVE data release (DELVE DR3; Drlica-Wagner et al.
 
 ### Second Data Release (DELVE DR2)
 
-The second DELVE data release (DELVE DR2; [Drlica-Wagner et al. 2022](http://arxiv.org/abs/2203.16565)) is hosted at the Astro Data Lab and consists of catalog-level coadds in _griz_ from the DELVE-WIDE processing. DELVE DR2 covers >20,000 deg² in each individual band and &sim;17,000 deg² in all bands simultaneously. The DELVE DR2 catalog contains &sim;2.5 billion unique objects, and &sim;618 million unique objects that were observed in all four bands.
+The second DELVE data release (DELVE DR2; [Drlica-Wagner et al. 2022](http://arxiv.org/abs/2203.16565)) consists of catalog-level coadds in _griz_ from the DELVE-WIDE processing. DELVE DR2 covers >20,000 deg² in each individual band and &sim;17,000 deg² in all bands simultaneously. The DELVE DR2 catalog contains &sim;2.5 billion unique objects, and &sim;618 million unique objects that were observed in all four bands. The DELVE DR2 catalog-level coadd objects can be accessed through the [delve_dr2.objects](/data-explorer?showTable=delve_dr2.objects) table.
 
 | DELVE DR2 Summary |   |
 |---|---|
 | Bands | _griz_ |
 | Number of Objects | 2,500,247,752 |
 | Area Covered (all bands) | 16,972 deg² |
-| Area Covered (_griz_) | 24,663; 22,939; 21,283; 22866 deg² |
+| Area Covered (_griz_) | 24,663, 22,939, 21,283, 22,866 deg² |
 | Depth (5σ PSF; _griz_) | 24.3, 23.9, 23.5, 22.8 mag |
 | Depth (5σ AUTO; _griz_) | 23.9, 23.5, 23.0, 22.4 mag |
 | PSF FWHM (_griz_) | 1.24, 1.10, 1.02, 1.00 arcsec |
@@ -89,14 +89,14 @@ Photometric redshifts for DELVE DR2 are derived by integrating a Recurrent Neura
 
 ### First Data Release (DELVE DR1)
 
-The first DELVE data release (DELVE DR1; [Drlica-Wagner et al. 2021](https://arxiv.org/abs/2103.07476)) is hosted at the Astro Data Lab and consists of catalog-level coadds in _griz_ from the DELVE-WIDE processing. DELVE DR1 covers >5,000 deg² in each individual band and &sim;4,000 deg² in all bands simultaneously. The DELVE DR1 catalog contains &sim;520 million unique objects.
+The first DELVE data release (DELVE DR1; [Drlica-Wagner et al. 2021](https://arxiv.org/abs/2103.07476)) is hosted at the Astro Data Lab and consists of catalog-level coadds in _griz_ from the DELVE-WIDE processing. DELVE DR1 covers >5,000 deg² in each individual band and &sim;4,000 deg² in all bands simultaneously. The DELVE DR1 catalog contains &sim;520 million unique objects. The DELVE DR1 catalog-level coadd objects can be accessed through the [delve_dr1.objects](/data-explorer?showTable=delve_dr1.objects) table.
 
 | DELVE DR1 Summary |   |
 |---|---|
 | Bands | _griz_ |
 | Number of Objects | 519,737,142 |
 | Area Covered (all bands) | 4,075 deg² |
-| Area Covered (_griz_) | 5,599; 5,106; 5,065; 5,153 deg² |
+| Area Covered (_griz_) | 5,599, 5,106, 5,065, 5,153 deg² |
 | Depth (5σ PSF; _griz_) | 24.3, 23.9, 23.3, 22.8 mag |
 | Depth (5σ AUTO; _griz_) | 23.9, 23.4, 22.9, 22.4 mag |
 | PSF FWHM (_griz_) | 1.28, 1.16, 1.07, 1.04 arcsec |
