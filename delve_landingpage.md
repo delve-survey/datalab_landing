@@ -2,7 +2,7 @@
 
 ## Description
 
-The DECam Local Volume Exploration Survey (DELVE; [PropID: 2019A-0305](https://legacy.noirlab.edu/noaoprop/abstract.mpl?2019A-0305)) combines archival DECam data with more than 150 nights of new observations to study satellite dwarf galaxies over a wide range of luminosities and environments. DELVE is divided into three survey components (WIDE, MC, and DEEP), each of which have their own observational strategy and data reduction pipeline. By combining novel observations with existing data from DES, DECaLS, and other community programs, DELVE provides complete contiguous DECam coverage of the entire high-Galactic-latitude southern sky. DELVE covers >17,000 deg² to a depth of _griz_ &sim; 23.5 mag, &sim;2,200 deg² around the Magellanic Clouds to a depth of _gri_ &sim; 24.5 mag, and &sim;135 deg² around isolated Magellanic analogs in the Local Volume to a depth of _gi_ &sim; 25.5 mag.
+The DECam Local Volume Exploration Survey (DELVE; [PropID: 2019A-0305](https://legacy.noirlab.edu/noaoprop/abstract.mpl?2019A-0305)) combines archival DECam data with more than 150 nights of new observations to study satellite dwarf galaxies over a wide range of luminosities and environments. DELVE is divided into three survey components (WIDE, MC, and DEEP), each of which have their own observational strategy and data reduction pipeline. By combining novel observations with existing data from DES, DECaLS, and other community programs, DELVE provides complete contiguous DECam coverage of the entire high-Galactic-latitude southern sky. DELVE covers >20,000 deg² to a depth of _griz_ &sim; 23.5 mag, &sim;2,200 deg² around the Magellanic Clouds to a depth of _gri_ &sim; 24.5 mag, and &sim;135 deg² around isolated Magellanic analogs in the Local Volume to a depth of _gi_ &sim; 25.5 mag.
 
 For more complete information about DELVE, please visit: [https://delve-survey.github.io](https://delve-survey.github.io). For a full list of results from the DELVE Collaboration or using the DELVE data, visit [https://delve-survey.github.io/#papers](https://delve-survey.github.io/#papers).
 
@@ -11,7 +11,7 @@ To date, there have been three DELVE data releases (DR1, DR2, DR3). The **delve_
 | DELVE at a Glance |   |   |   |
 |---|---|---|---|
 | **Survey** | **Area** | **Bands** | **Depth (10σ)** |
-| DELVE-WIDE | &sim;17,000 deg² | _griz_ | &sim;23.5 mag |
+| DELVE-WIDE | &sim;20,000 deg² | _griz_ | &sim;23.5 mag |
 | DELVE-MC | &sim;2,200 deg² | _gri_ | &sim;24.5 mag |
 | DELVE-DEEP | &sim;135 deg² | _gi_ | &sim;25.5 mag |
 
@@ -37,13 +37,13 @@ These three survey components will provide complementary insights into the abund
 
 ### Third Data Release (DELVE DR3)
 
-The third DELVE data release (DELVE DR3; Drlica-Wagner et al., in prep) consists of coadded images and catalogs in _griz_ from the DECam All Data Everywhere (DECADE) and DES DR2 processing at NCSA with the DES Data Management (DESDM) pipeline. The DELVE DR3 catalog contains &sim;2.6 billion unique coadd objects and covers >21,000 deg² in all four bands simultaneously. The DELVE DR3 coadd objects can be accessed through the [delve_dr3.coadd_objects](/data-explorer?showTable=delve_dr3.coadd_objects) table.
+The third DELVE data release (DELVE DR3; Drlica-Wagner et al., in prep) consists of coadded images and catalogs in _griz_ from the DECam All Data Everywhere (DECADE) and DES DR2 processing at NCSA with the DES Data Management (DESDM) pipeline. The DELVE DR3 catalog contains &sim;2.6 billion unique coadd objects and covers &sim;20,000 deg² in all four bands simultaneously. The DELVE DR3 coadd objects can be accessed through the [delve_dr3.coadd_objects](/data-explorer?showTable=delve_dr3.coadd_objects) table.
 
 | DELVE DR3 Summary |   |
 |---|---|
 | Bands | _griz_ |
 | Number of Objects | 2,588,267,795 |
-| Area Covered (all bands) | 21,256 deg² |
+| Area Covered (all bands) | 20,000 deg² |
 | Depth (5σ PSF; _griz_) | 24.9, 24.5, 24.0, 23.5 mag |
 | Depth (5σ AUTO; _griz_) | 24.3, 24.0, 23.5, 22.8 mag |
 
