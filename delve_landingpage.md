@@ -2,11 +2,11 @@
 
 ## Description
 
-The DECam Local Volume Exploration Survey (DELVE; [PropID: 2019A-0305](https://legacy.noirlab.edu/noaoprop/abstract.mpl?2019A-0305)) combines archival DECam data with more than 150 nights of new observations to study satellite dwarf galaxies over a wide range of luminosities and environments. DELVE is divided into three survey components (WIDE, MC, and DEEP), each of which have their own observational strategy and data reduction pipeline. By combining novel observations with existing data from DES, DECaLS, and other community programs, DELVE provides complete contiguous DECam coverage of the entire high-Galactic-latitude southern sky. DELVE covers >20,000 deg² to a depth of _griz_ &sim; 23.5 mag, &sim;2,200 deg² around the Magellanic Clouds to a depth of _gri_ &sim; 24.5 mag, and &sim;135 deg² around isolated Magellanic analogs in the Local Volume to a depth of _gi_ &sim; 25.5 mag.
+The DECam Local Volume Exploration Survey (DELVE; [PropID: 2019A-0305](https://legacy.noirlab.edu/noaoprop/abstract.mpl?2019A-0305)) combines archival DECam data with more than 150 nights of new observations to study satellite dwarf galaxies over a wide range of luminosities and environments. DELVE is divided into three survey components (WIDE, MC, and DEEP), each of which have their own observational strategy and data reduction pipeline. By combining novel observations with existing data from DES, DECaLS, and other community programs, DELVE provides complete contiguous DECam coverage of the entire high-Galactic-latitude southern sky. DELVE covers &gt;20,000 deg² to a 10σ depth of _griz_ &sim; 23.5 mag, &sim;2,200 deg² around the Magellanic Clouds to a depth of _gri_ &sim; 24.5 mag, and &sim;135 deg² around isolated Magellanic analogs in the Local Volume to a depth of _gi_ &sim; 25.5 mag.
 
-For more complete information about DELVE, please visit: [https://delve-survey.github.io](https://delve-survey.github.io). For a full list of results from the DELVE Collaboration or using the DELVE data, visit [https://delve-survey.github.io/#papers](https://delve-survey.github.io/#papers).
+For more complete information about DELVE, please visit: [https://delve-survey.github.io](https://delve-survey.github.io). For a list of results from the DELVE Collaboration and using the DELVE data, visit [https://delve-survey.github.io/#papers](https://delve-survey.github.io/#papers).
 
-To date, there have been three DELVE data releases (DR1, DR2, DR3). The **delve_dr2.objects** table and **delve_dr1.objects** table have been crossmatched against our default reference datasets within a 1.5 arcsec radius, nearest neighbor only. These tables will appear with **x1p5** in their name in our table browser. Example: [delve_dr2.x1p5__objects__gaia_dr3__gaia_source](/data-explorer?showTable=delve_dr2.x1p5__objects__gaia_dr3__gaia_source).
+To date, there have been three DELVE data releases (DR1, DR2, DR3). The **[delve_dr3.coadd_objects](/data-explorer?showTable=delve_dr3.coadd_objects)** table represents the deepest and most recent catalog. The **[delve_dr2.objects](/data-explorer?showTable=delve_dr2.objects)** table and **[delve_dr1.objects](/data-explorer?showTable=delve_dr1.objects)** table have been crossmatched against our default reference datasets within a 1.5 arcsec radius, nearest neighbor only. These tables will appear with **x1p5** in their name in our table browser. Example: [delve_dr2.x1p5__objects__gaia_dr3__gaia_source](/data-explorer?showTable=delve_dr2.x1p5__objects__gaia_dr3__gaia_source).
 
 | DELVE at a Glance |   |   |   |
 |---|---|---|---|
@@ -15,7 +15,7 @@ To date, there have been three DELVE data releases (DR1, DR2, DR3). The **delve_
 | DELVE-MC | &sim;2,200 deg² | _gri_ | &sim;24.5 mag |
 | DELVE-DEEP | &sim;135 deg² | _gi_ | &sim;25.5 mag |
 
-**DELVE DR2 Coverage Map**
+**DELVE Coverage Map**
 
 ![delve_dr2_footprint.png](https://content.datalab.noirlab.edu/uploads/delve_dr2_footprint_0df7a3c02b.png)
 
@@ -23,13 +23,13 @@ To date, there have been three DELVE data releases (DR1, DR2, DR3). The **delve_
 
 ## Scientific Goals
 
-DELVE seeks to understand the faintest and most dark-matter-dominated galaxies in a range of environments. The DELVE data enable the detection and characterization of dwarf galaxies over a broad range of luminosity, from the ultra-faint satellites of the Milky Way (L &sim; 10³L⊙), to the Magellanic Clouds (L &sim; 10⁹⁻¹⁰ L⊙), and analogs of the Magellanic Clouds in the Local Volume. DELVE consists of:
+DELVE seeks to understand the faintest and most dark-matter-dominated galaxies in a range of environments. The DELVE data enable the detection and characterization of dwarf galaxies over a broad range of luminosity, extending from the ultra-faint satellites of the Milky Way (L &sim; 10³L⊙) to analogs of the Magellanic Clouds (L &sim; 10⁹⁻¹⁰ L⊙) in the Local Volume. DELVE consists of:
 
 - **DELVE-WIDE:** a high-Galactic-latitude wide-area survey focused on resolved stellar systems (e.g., ultra-faint satellite galaxies and stellar streams) in the Milky Way halo.
 - **DELVE-MC:** a contiguous Magellanic Cloud periphery survey to study the structure, evolution, star formation history, and satellite population of the Magellanic Clouds.
-- **DELVE-DEEP:** a deep targeted survey of four Magellanic Cloud analogs (Sextans B, NGC 55, NGC 300, IC 5152) in the Local Volume to study the satellite populations of isolated low-mass hosts.
+- **DELVE-DEEP:** a deep targeted survey of Magellanic Cloud analogs (i.e., Sextans B, NGC 55, NGC 300, IC 5152) in the Local Volume to study the satellite populations of isolated low-mass hosts.
 
-These three survey components will provide complementary insights into the abundance and properties of satellite galaxies around hosts at different mass scales and in a variety of environments. Combined with a unified theoretical framework, DELVE will explore the dependence of satellite properties on effects of reionization, host halo properties, and environment, offering essential insights into the galaxy–halo connection. More information about DELVE can be found at: [https://delve-survey.github.io/](https://delve-survey.github.io).
+These three survey components will provide complementary insights into the abundance and properties of satellite galaxies around hosts at different mass scales and in a variety of environments. Combined with a unified theoretical framework, DELVE seeks to explore the dependence of satellite properties on reionization, host halo properties, and environment, in order to offer insights into the galaxy–halo connection. More information about DELVE can be found at: [https://delve-survey.github.io/](https://delve-survey.github.io).
 
 [Back to Top](#)
 
@@ -37,7 +37,7 @@ These three survey components will provide complementary insights into the abund
 
 ### Third Data Release (DELVE DR3)
 
-The third DELVE data release (DELVE DR3; Drlica-Wagner et al., in prep) consists of coadded images and catalogs in _griz_ from the DECam All Data Everywhere (DECADE) and DES DR2 processing at NCSA with the DES Data Management (DESDM) pipeline. The DELVE DR3 catalog contains &sim;2.6 billion unique coadd objects and covers &sim;20,000 deg² in all four bands simultaneously. The DELVE DR3 coadd objects can be accessed through the [delve_dr3.coadd_objects](/data-explorer?showTable=delve_dr3.coadd_objects) table.
+The third DELVE data release (DELVE DR3; Drlica-Wagner et al., in prep) consists of coadded images and catalogs in _griz_ from the DECam All Data Everywhere (DECADE) and DES DR2 processing at NCSA using the DES Data Management (DESDM) pipeline. The DELVE DR3 coadd object catalog contains &sim;2.6 billion unique coadd objects and covers &sim;20,000 deg² in all four bands simultaneously. The DELVE DR3 coadd objects can be accessed through the [delve_dr3.coadd_objects](/data-explorer?showTable=delve_dr3.coadd_objects) table.
 
 | DELVE DR3 Summary |   |
 |---|---|
@@ -53,6 +53,8 @@ The third DELVE data release (DELVE DR3; Drlica-Wagner et al., in prep) consists
 
 
 #### DECADE Cosmic Shear
+
+Data products associated with the DECADE cosmic shear program (i.e., [Anbajagane et al. 2025](https://ui.adsabs.harvard.edu/abs/2025arXiv250217674A)) are coming soon!
 
 &nbsp;  
 
